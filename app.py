@@ -20,7 +20,7 @@ Base.metadata.create_all(bind=engine)
 
 app = FastAPI(title="FastAPI КР4")
 
-# ── Регистрация обработчиков исключений ───────────────────────────
+# Регистрация обработчиков исключений
 app.add_exception_handler(CustomExceptionA, custom_exception_a_handler)
 app.add_exception_handler(CustomExceptionB, custom_exception_b_handler)
 app.add_exception_handler(InsufficientStockException, insufficient_stock_handler)
